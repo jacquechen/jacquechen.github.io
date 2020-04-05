@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF2F2;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.title {
+  position: fixed;
+  margin: 1.4em;
+  padding: 1em;
+  right: 0;
+  z-index: 1;
+}
+
+.jackie {
+  font-family: "Playfair Display", serif;
+  font-size: 10px;
+  color: #19222F;
+}
+
+.toggle-btn {
+  position: fixed;
+  margin: 1.4em;
+  padding: 1em;
+  width: 40px;
+  height: 12px;
+  right: 0;
+  z-index: 1;
+}
+
+span.one {
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: #19222F;
+}
+
+span.two {
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: #19222F;
+}
+
+#nav-overlay {
+  z-index: 0;
+  position: absolute;
+  background: black;
+  height: 100vh;
+  width: 100%;
+}
+
+.menu {
+  padding: 8em 0 0 2em;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+}
+/*# sourceMappingURL=main.css.map */
