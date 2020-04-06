@@ -28,25 +28,23 @@ body {
 
 .title {
     position: fixed;
-    margin: 1.4em;
-    padding: 1em;
-    right: 0;
+    left: 3em;
+    top: 1em;
     z-index: 1;
 }
 
 .jackie {
     font-family: $hfont;
-    font-size: 10px;
+    font-size: 20px;
     color: $text-color;
 }
 
 .toggle-btn {
     position: fixed;
-    margin: 1.4em;
-    padding: 1em;
     width: 40px;
     height: 12px;
-    right: 0;
+    right: 3.5em;
+    top: 2.5em;
     z-index: 1;
 }
 
@@ -62,6 +60,7 @@ span.two {
     width: 40px;
     height: 2px;
     background: $text-color;
+    margin-top: 12px;
 }
 
 #nav-overlay {
@@ -78,6 +77,50 @@ span.two {
     text-align: left;
 }
 
-ul {
+.menu ul {
     list-style: none;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu ul li {
+    display: inline-block;
+    padding-right: 10px;
+    color: white;
+    font-size: 100px;
+    line-height: 2em;
+}
+
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: $hfont;
+}
+
+.social {
+    position: fixed;
+    bottom: 2.5em;
+    right: 3em;
+}
+
+.social ion-icon {
+    color: white;
+    padding-left: 20px;
+    font-size: 25px;
+}
+
+.contact {
+    position: fixed;
+    bottom: 2.5em;
+    left: 3em;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: $hfont;
 }
