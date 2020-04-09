@@ -36,14 +36,14 @@ body::-webkit-scrollbar {
   position: fixed;
   left: 3em;
   top: 1em;
-  z-index: 2;
+  z-index: 1;
 }
 
 .jackie {
   font-family: "Playfair Display", serif;
   font-size: 20px;
   color: black;
-  z-index: 3;
+  z-index: 1;
 }
 
 .toggle {
