@@ -167,31 +167,6 @@ span.two {
     height: 100vh;
 }
 
-.slider .section h2.slidecap {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 9vw;
-    margin: 0 auto;
-    text-transform: uppercase;
-    font-family: $hfont;
-    font-weight: 700;
-}
-
-.slider .section h2.slidecap {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 9vw;
-    margin: 0 auto;
-    text-transform: uppercase;
-    font-family: $hfont;
-    font-weight: 700;
-    white-space: nowrap;    
-}
-
 .slider .section img {
     max-width: 70%;
     max-height: 100%;
@@ -200,7 +175,7 @@ span.two {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: .8;
-    
+    box-shadow: 0px 10px 16px -6px rgb(134, 134, 134);
 }   
 
 #gallery {
@@ -224,7 +199,7 @@ span.two {
 }
 
 //parallax
-section {
+.section {
   height: 100vh;
   display: flex;
   justify-content: space-around;
@@ -235,13 +210,17 @@ section {
   display: inline-block;
   
   .box {
-    font-size: 12vw;
+    font-size: 8vw;
+    display: block;
     white-space: nowrap;
     position: absolute;
-    top: 75%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
+    text-transform: uppercase;
+    font-family: $hfont;
+    cursor: pointer;
   }
 }
 
@@ -249,4 +228,45 @@ section {
   transform: scale(3);
 }
 
-// Hover effects
+// Scroll Down
+
+.scroll-downs {
+  position: fixed;
+  bottom: 7%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: auto;
+  
+  width:60px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  margin: 0 auto;
+  height: 35px;
+  border: 2px solid black;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: black;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+.scrollcap {
+    margin: 0 auto;
+    text-align: center;
+}
