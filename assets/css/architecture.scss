@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;700&display=swap');
+
+//font variables
+
+$hfont: 'Playfair Display', serif;
+$bfont: 'Open Sans', sans-serif;
+
+//color variables
+$main-color: rgb(236, 236, 236);
+$text-color: #19222F;
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    -ms-overflow-style: none;
+}
+
+body {
+    background-color: $main-color;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    -ms-overflow-style: none;
+}
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+.title {
+    position: fixed;
+    left: 3em;
+    top: 1em;
+    z-index: 2;
+}
+
+.jackie {
+    font-family: $hfont;
+    font-size: 18px;
+    color: black;
+    z-index: 1;
+    margin-bottom: 7px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.toggle {
+    position: fixed;
+    width: 40px;
+    height: 12px;
+    right: 3.5em;
+    top: 2.5em;
+    z-index: 2;
+    cursor: pointer;
+}
+
+span.one {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: $text-color;
+}
+
+span.two {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: $text-color;
+    margin-top: 12px;
+}
+
+#nav-overlay {
+    z-index: 1;
+    position: fixed;
+    background: #9197AE;
+    height: 100%;
+    width: 100%;
+    top: -150%;
+    right: -150%;
+    -ms-overflow-style: none;
+    opacity: 0;
+}
+
+#nav-overlay::-webkit-scrollbar {
+    display: none;
+}
+
+.menu {
+    padding: 8em 0 0 2em;
+    text-align: left;
+}
+
+.menu ul {
+    list-style: none;
+    position: fixed;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding-right: 10px;
+    color: white;
+    font-size: 100px;
+    line-height: 2em;
+}
+
+
+.menu ul li a.linkoverlay {
+    text-decoration: none;
+    color: white;
+    font-family: $hfont;
+}
+
+.social {
+    position: fixed;
+    bottom: 2.5em;
+    right: 3em;
+    z-index: 1;
+}
+
+.social ion-icon {
+    color: black;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.contact {
+    position: fixed;
+    bottom: 2.5em;
+    left: 3em;
+    z-index: 1;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: $hfont;
+    margin-bottom: 7px;
+}
+
+.tabs {
+    clear: both;
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    top: 10%;
+    margin: 0 auto;
+    font-family: $hfont;
+   /* you can either manually set a min-height here or do it via JS ---> */
+}
+
+.tab {
+    float: left;
+}
+
+.tab label {
+	margin-right: 20px;
+    position: relative;
+    left: 3em;
+	top: 0;
+	cursor: pointer;
+	color: #333;
+   text-transform: uppercase;
+}
+
+.tab [type=radio] {
+	display: none;   
+}
+
+.tab__content {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 100%;
+	padding: 0em 3em;
+	transition: opacity .2s cubic-bezier(.42,0,.34,1.01);
+    opacity: 0;
+    font-family: $bfont;
+}
+
+[type=radio]:checked ~ label {
+	border-bottom: 2px solid #1d1d1d;
+	color: #1d1d1d;
+	z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .tab__content {
+	z-index: 1;
+	opacity: 1;
+}
+
+.mainimg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 50px;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+    transform: scale(1.05);
+    }
+}
+
+.mainimg-container {
+    position: absolute;
+    top: 2em;
+    max-width: 52%;
+    max-height: 70%;
+    display: block;
+    background-color: #9197AE;
+    
+}
+
+hr {
+    border-top: 1px solid #2E4166;
+}
+
+.head-content {
+    width: 100%;
+    height: 80vh;
+    //background-color: green;
+}
+
+.description {
+    position: absolute;
+    top: 2em;
+    width: 40%;
+    right: 3%;
+    height: 68.8%;
+    font-family: $hfont;
+}
+
+.description h2 {
+    position: relative;
+    margin: 0 auto;
+    font-size: 4vw;
+}
+
+.description p {
+    font-family: $bfont;
+}
+
+.tabs h4 {
+    position: absolute;
+    right: 1em;
+    white-space: nowrap;
+    font-size: 5vw;
+    margin: 0 auto;
+    font-family: $hfont;
+}
+
+.gallery {
+    width: 100%;
+    height: 100vh;
+}
+
+.img-container {
+    cursor: pointer;
+    overflow: hidden;
+    &:hover .img-content-hover {
+        display: block;
+    }
+    float: left;
+    width: 33.333333%;
+    height: 50%;
+    margin: 0;
+    padding: 10px;
+}
+
+img.galleryimg {
+    position:  relative;
+	width: 100%;
+    height: 100%;
+	object-fit: cover;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+    transform: scale(1.05);
+    }
+}
+

@@ -32,7 +32,7 @@ t1.to(".social ion-icon", {
     delay: -.5
 });
 
-t1.to(".contact a.conlink", {
+t1.to(".contact a", {
     color: "#ffffff",
     ease: "expo.inOut()",
     delay: -.5
@@ -114,10 +114,9 @@ $(window).on('load', function() {
 
 $(document).ready(function() {
   
-  var $SVG = $(".section > img");
 
   // loop through each element
-  $("img").each(function(i, el) {
+  $(".imgwrap").each(function(i, el) {
 
     // create a timeline for this element in paused state
     var t3 = new TimelineMax({
@@ -125,7 +124,7 @@ $(document).ready(function() {
     });
 
     // create your tween of the timeline in a variable
-    t3.to(el, 0.4, {
+    t3.to("img", 0.4, {
       scale: 1.05//,
       //clearProps: "all"
     });
@@ -156,3 +155,20 @@ $(document).ready(function() {
     });
   });
 });
+
+//tabs
+
+(function($, document) {
+    
+      // get tallest tab__content element
+      let height = -1;
+
+		$('.tab__content').each(function() {
+			height = height > $(this).outerHeight() ? height : $(this).outerHeight();
+         $(this).css('position', 'absolute');
+		});
+      
+      // set height of tabs + top offset
+		$('[data-tabs]').css('min-height', height + 40 + 'px');
+   
+}(jQuery, document));
