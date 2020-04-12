@@ -153,6 +153,7 @@ span.two {
   top: 10%;
   margin: 0 auto;
   font-family: "Playfair Display", serif;
+  z-index: 0;
   /* you can either manually set a min-height here or do it via JS ---> */
 }
 
@@ -175,8 +176,11 @@ span.two {
 }
 
 .tab__content {
-  position: absolute;
+  position: relative;
   top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   padding: 0em 3em;
@@ -203,7 +207,7 @@ span.two {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  padding: 50px;
+  padding: 0px;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: all 0.3s ease-in-out;
@@ -213,6 +217,7 @@ span.two {
 .mainimg:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  padding: 30px 40px;
 }
 
 .mainimg-container {
@@ -226,6 +231,7 @@ span.two {
 
 hr {
   border-top: 1px solid #2E4166;
+  margin-bottom: 2em;
 }
 
 .head-content {
@@ -263,7 +269,8 @@ hr {
 
 .gallery {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  margin-bottom: 2em;
 }
 
 .img-container {
@@ -271,7 +278,7 @@ hr {
   overflow: hidden;
   float: left;
   width: 33.333333%;
-  height: 50%;
+  height: 33.333333%;
   margin: 0;
   padding: 10px;
 }
@@ -295,5 +302,7 @@ img.galleryimg {
 img.galleryimg:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  -webkit-box-shadow: 5px 5px 0px #9197AE;
+          box-shadow: 5px 5px 0px #9197AE;
 }
 /*# sourceMappingURL=architecture.css.map */
