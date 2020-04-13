@@ -112,50 +112,6 @@ $(window).on('load', function() {
     $(this).impulse();
 });
 
-$(document).ready(function() {
-  
-
-  // loop through each element
-  $(".imgwrap").each(function(i, el) {
-
-    // create a timeline for this element in paused state
-    var t3 = new TimelineMax({
-      paused: true
-    });
-
-    // create your tween of the timeline in a variable
-    t3.to("img", 0.4, {
-      scale: 1.05//,
-      //clearProps: "all"
-    });
-
-    // store the tween timeline in the javascript DOM node
-    el.animation = t3;
-
-    //create the event handler
-    $(el).on("mouseenter", function() {
-      
-      console.log("mouseenter");
-      
-      //this.style.willChange = 'transform';
-      //el.parentNode.appendChild(el);      
-      this.animation.play();
-      
-      //$(this).appendTo($SVG);
-      
-    }).on("mouseleave", function() {
-      
-      console.log("mouseleave");
-      
-      //this.style.willChange = 'auto';
-      //el.parentNode.insertBefore(el, el.parentNode.firstChild);
-      this.animation.reverse();
-     
-     
-    });
-  });
-});
-
 //tabs
 
 (function($, document) {
