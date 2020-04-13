@@ -154,157 +154,87 @@ span.two {
     margin-bottom: 7px;
 }
 
-.tabs {
-    clear: both;
-    position: absolute; 
+.content{
+  padding-bottom: 20px;
+}
+
+.card{
+  position: relative;
+  background: #fff;
+  padding:50px;
+  width: 70%;
+  margin: 40px 0 0 0;
+  box-shadow: 5px 5px 10px rgba(100,100,100,.1);
+}
+
+.card h2 {
+  font-size:5vw;
+  margin: 0 auto;
+  font-weight:400;
+  color: #2E4166;;
+  display: block;
+}
+
+.card h2 a {
+  color:#2E4166;
+  text-decoration:none;
+}
+
+.card .date {
+  color:#797979;
+  margin-top:10px;
+  font-size:14px;
+}
+
+.card .text {
+  color:#212121;
+  margin-top:20px;
+  font-size:20px;
+  line-height:22px;
+}
+
+.writing {
     width: 100%;
     height: 100%;
+    position: absolute;
     top: 10%;
-    margin: 0 auto;
-    font-family: $hfont;
-    z-index: 0;
-   /* you can either manually set a min-height here or do it via JS ---> */
+    padding: 0 3em;
 }
 
-.tab {
-    float: left;
-}
-
-.tab label {
-	margin-right: 20px;
-    position: relative;
-    left: 3em;
-	top: 0;
-	cursor: pointer;
-	color: #333;
-   text-transform: uppercase;
-}
-
-.tab [type=radio] {
-	display: none;   
-}
-
-.tab__content {
-    position: relative;
-    top: 40px;
-    left: 0;
-	right: 0;
-	bottom: 0;
-    width: 100%;
-    height: 100%;
-	padding: 0em 3em;
-	transition: opacity .2s cubic-bezier(.42,0,.34,1.01);
-    opacity: 0;
-    font-family: $bfont;
-}
-
-[type=radio]:checked ~ label {
-	border-bottom: 2px solid #1d1d1d;
-	color: #1d1d1d;
-	z-index: 2;
-}
-
-[type=radio]:checked ~ label ~ .tab__content {
-	z-index: 1;
-	opacity: 1;
-}
-
-.mainimg {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    padding: 0px;
-    transform: scale(1);
-    transition: all 0.3s ease-in-out;
-    &:hover {
-    transform: scale(1.05);
-    padding: 30px 40px;
-    }
-}
-
-.mainimg-container {
-    position: absolute;
-    top: 2em;
-    max-width: 50%;
-    height: 50%;
-    display: block;
-    background-color: #9197AE;
-    
-}
-
-hr {
-    border-top: 1px solid #2E4166;
-    margin-bottom: 2em;
-}
-
-.head-content {
-    width: 100%;
-    height: 80vh;
-    //background-color: green;
-}
-
-.description {
-    position: absolute;
-    top: 2em;
-    width: 40%;
-    right: 3%;
-    height: 68.8%;
-    font-family: $hfont;
-}
-
-.description h2 {
-    position: relative;
-    margin: 0 auto;
-    font-size: 4vw;
-}
-
-.description p {
-    font-family: $bfont;
-}
-
-.tabs h4 {
-    position: absolute;
-    right: 1em;
-    white-space: nowrap;
+.writing h2 {
     font-size: 5vw;
     margin: 0 auto;
-    font-family: $hfont;
+    display: block;
 }
 
-.gallery {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 2em;
-    align-items: stretch;
-    justify-items: stretch;
-    text-align: center;
+hr{
+    margin: 2em 0;
 }
 
-.img-container {
-    cursor: pointer;
-    overflow: hidden;
-    display: inline-block;
-    &:hover .img-content-hover {
-        display: block;
-    }
-    position: relative;
-    max-width: 33%;
-    height: 33%;
+.proj .subtitle h3 {
+    font-size: 3vw;
     margin: 0 auto;
-    padding: 20px;
+    display: inline-block;
+    border-bottom: 1px rgba(0, 0, 0, 0.376) solid;
 }
 
-img.galleryimg {
-    position:  relative;
-	width: 100%;
-    height: 100%;
-	object-fit: cover;
-    transform: scale(1);
-    transition: all 0.3s ease-in-out;
-    &:hover {
-    transform: scale(1.05);
-    box-shadow: 5px 5px 0px rgb(159, 164, 187);
-    }
+.proj .subtitle h4 {
+    font-size: 1.5vw;
+    margin: 0 auto;
+    display: inline-block;
 }
 
+.proj {
+    width: 100%;
+    max-height: 100%;
+    margin-bottom: 4em;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    display: block;
+}
+.proj img {
+    max-width: 50%;
+    max-height: 50%;
+}

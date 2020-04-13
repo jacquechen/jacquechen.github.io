@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100%;
+  -ms-overflow-style: none;
+}
+
+body {
+  background-color: #ececec;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  -ms-overflow-style: none;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  position: fixed;
+  left: 3em;
+  top: 1em;
+  z-index: 2;
+}
+
+.jackie {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  color: black;
+  z-index: 1;
+  margin-bottom: 7px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.toggle {
+  position: fixed;
+  width: 40px;
+  height: 12px;
+  right: 3.5em;
+  top: 2.5em;
+  z-index: 2;
+  cursor: pointer;
+}
+
+span.one {
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: #19222F;
+}
+
+span.two {
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: #19222F;
+  margin-top: 12px;
+}
+
+#nav-overlay {
+  z-index: 1;
+  position: fixed;
+  background: #9197AE;
+  height: 100%;
+  width: 100%;
+  top: -150%;
+  right: -150%;
+  -ms-overflow-style: none;
+  opacity: 0;
+}
+
+#nav-overlay::-webkit-scrollbar {
+  display: none;
+}
+
+.menu {
+  padding: 8em 0 0 2em;
+  text-align: left;
+}
+
+.menu ul {
+  list-style: none;
+  position: fixed;
+  text-align: center;
+}
+
+.menu ul li {
+  display: inline-block;
+  padding-right: 10px;
+  color: white;
+  font-size: 100px;
+  line-height: 2em;
+}
+
+.menu ul li a.linkoverlay {
+  text-decoration: none;
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+
+.social {
+  position: fixed;
+  bottom: 2.5em;
+  right: 3em;
+  z-index: 1;
+}
+
+.social ion-icon {
+  color: black;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.contact {
+  position: fixed;
+  bottom: 2.5em;
+  left: 3em;
+  z-index: 1;
+}
+
+.contact a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 7px;
+}
+
+.content {
+  padding-bottom: 20px;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  padding: 50px;
+  width: 70%;
+  margin: 40px 0 0 0;
+  -webkit-box-shadow: 5px 5px 10px rgba(100, 100, 100, 0.1);
+          box-shadow: 5px 5px 10px rgba(100, 100, 100, 0.1);
+}
+
+.card h2 {
+  font-size: 5vw;
+  margin: 0 auto;
+  font-weight: 400;
+  color: #2E4166;
+  display: block;
+}
+
+.card h2 a {
+  color: #2E4166;
+  text-decoration: none;
+}
+
+.card .date {
+  color: #797979;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.card .text {
+  color: #212121;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.writing {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10%;
+  padding: 0 3em;
+}
+
+.writing h2 {
+  font-size: 5vw;
+  margin: 0 auto;
+  display: block;
+}
+
+hr {
+  margin: 2em 0;
+}
+
+.proj .subtitle h3 {
+  font-size: 3vw;
+  margin: 0 auto;
+  display: inline-block;
+  border-bottom: 1px rgba(0, 0, 0, 0.376) solid;
+}
+
+.proj .subtitle h4 {
+  font-size: 1.5vw;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.proj {
+  width: 100%;
+  max-height: 100%;
+  margin-bottom: 4em;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.proj img {
+  max-width: 50%;
+  max-height: 50%;
+}
+/*# sourceMappingURL=writing.css.map */
