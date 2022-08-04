@@ -192,7 +192,7 @@ span.two {
 
 [type=radio]:checked ~ label {
   border-bottom: 2px solid #1d1d1d;
-  color: #1d1d1d;
+  color: #234;
   z-index: 2;
 }
 
@@ -224,7 +224,7 @@ span.two {
   position: absolute;
   top: 2em;
   max-width: 50%;
-  height: 50%;
+  height: 15%;
   display: block;
   background-color: #9197AE;
 }
@@ -284,7 +284,7 @@ hr {
   display: inline-block;
   position: relative;
   max-width: 33%;
-  height: 33%;
+  height: 15%;
   margin: 0 auto;
   padding: 20px;
 }
