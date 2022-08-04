@@ -157,8 +157,8 @@ span.two {
 }
 
 .about .profileimg {
-  width: 30vh;
-  height: 35vh;
+  width: 20vh;
+  height: 25vh;
   background-image: url("../../images/portfolio/Website Materials/JPEG/Profile_Picture.jpg");
   background-repeat: no-repeat;
   background-size: 110%;
