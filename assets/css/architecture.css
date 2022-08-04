@@ -221,10 +221,10 @@ span.two {
 }
 
 .mainimg-container {
-  position: absolute;
+  position: relative;
   top: 2em;
-  max-width: 50%;
-  height: 25%;
+  max-width: 100%;
+  height: 100%;
   display: block;
   background-color: #9197AE;
 }
@@ -240,10 +240,10 @@ hr {
 }
 
 .description {
-  position: absolute;
-  top: 2em;
-  width: 35%;
-  right: 5%;
+  position: relative;
+  top: 15%;
+  width: 95%;
+  left: 0%;
   height: 68.8%;
   font-family: "Playfair Display", serif;
 }
