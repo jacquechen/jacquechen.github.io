@@ -240,7 +240,7 @@ span.two {
 
 .scroll-downs {
   position: fixed;
-  bottom: 7%;
+  bottom: 5%;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
