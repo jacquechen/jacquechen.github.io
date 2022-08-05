@@ -237,7 +237,6 @@ hr {
   width:95%;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 1%;
 }
 
 .head-content {
@@ -259,7 +258,7 @@ hr {
 .description h2 {
   position: relative;
   margin: 0 auto;
-  font-size: 3vw;
+  font-size: 4vw;
 }
 
 .description p {
