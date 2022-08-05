@@ -237,6 +237,7 @@ hr {
   width:95%;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 1%;
 }
 
 .head-content {
@@ -294,7 +295,7 @@ hr {
   max-width: 33%;
   height: 33%;
   margin: 0 auto;
-  padding: 1%;
+  padding: 2.5%;
 }
 
 .img-container:hover .img-content-hover {
