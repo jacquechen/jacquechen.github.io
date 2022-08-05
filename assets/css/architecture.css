@@ -105,9 +105,9 @@ span.two {
 
 .menu ul li {
   display: inline-block;
-  padding-right: 10px;
+  padding-right: 1%;
   color: white;
-  font-size: 100px;
+  font-size: 25%;
   line-height: 2em;
 }
 
