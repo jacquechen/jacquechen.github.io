@@ -145,7 +145,7 @@ span.two {
   margin-bottom: 7px;
 }
 .proj .subtitle h3 {
-  font-size: 2vw;
+  font-size: 2vmax;
   margin: 0 auto;
   display: inline-block;
   border-bottom: 0px rgba(0, 0, 0, 0.376) solid;
