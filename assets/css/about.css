@@ -287,8 +287,8 @@ span.two {
 }
 
 .download {
-  height: 15%;
-  width: 20%;
+  height: 4em;
+  width: 10em;
   position: absolute;
   left: 50%;
   bottom: -18.75vh;
