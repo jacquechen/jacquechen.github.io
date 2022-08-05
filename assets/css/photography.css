@@ -93,7 +93,7 @@ span.two {
 }
 
 .menu {
-  padding: 12em, 0, 0, 0;
+  padding: 12em, 0, 0, 1%;
   text-align: center;
 }
 
@@ -167,7 +167,7 @@ span.two {
   margin-bottom: 5%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(24rem, 1fr))[auto-fill];
+  -ms-grid-columns:(minmax(24rem, 1fr))[auto-fill];
   grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
   grid-auto-rows: 1fr;
 }
