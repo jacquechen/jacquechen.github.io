@@ -216,7 +216,7 @@ span.two {
 }
 
 
-@media only screen and (max-width: 50vw) {
+@media only screen and (max-width: 75vw) and (max-height: 75vh) {
   .lightbox-gallery {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
