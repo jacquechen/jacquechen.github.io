@@ -281,14 +281,14 @@ span.two {
 }
 
 .profline {
-  border-left: 5px dashed black;
+  border-left: 0px dashed black;
   height: 100%;
   z-index: 1;
 }
 
 .download {
-  height: 15vh;
-  width: 40vh;
+  height: 15%;
+  width: 20%;
   position: absolute;
   left: 50%;
   bottom: -18.75vh;
