@@ -233,7 +233,7 @@ span.two {
 }
 
 hr {
-  border-top: 1px solid #2E4166;
+  border-top: 0px solid #2E4166;
   width:95%;
   margin-right: auto;
   margin-left: auto;
@@ -259,6 +259,7 @@ hr {
   position: relative;
   margin: 0 auto;
   font-size: 4vw;
+  border-bottom: 1px solid #2E4166;
 }
 
 .description p {
