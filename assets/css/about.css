@@ -177,7 +177,7 @@ span.two {
   border: 2px solid #E5C2CC;
   background-color: #FFFFFF;
   position: relative;
-  top: 12.5vh;
+  top: 12.5vmin;
   margin-bottom: 10 em;
 }
 
@@ -236,13 +236,13 @@ span.two {
   margin: 0 auto;
   margin-top: .5em;
   display: block;
-  padding: 0 5vh 0 5vh;
+  padding: 0 1vh 0 1vh;
   font-weight: 400;
 }
 
 .bio ul li p {
-  font-size: 1.3vw;
-  padding: 0 5vh 0 5vh;
+  font-size: 1.3vmax;
+  padding: 0 0vh 0 0vh;
 }
 
 .bio ul li ul {
