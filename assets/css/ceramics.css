@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-  background-color: #ececec;
+  background-color: #f0ece4;
 }
 
 body::-webkit-scrollbar {
@@ -148,7 +148,8 @@ span.two {
   font-size: 2vmax;
   margin: 2% auto 0 auto;
   display: inline-block;
-  border-bottom: px rgba(0, 0, 0, 0.376) solid;
+  border-bottom: 3px dotted #e3bfbf;
+	
 }
 
 
