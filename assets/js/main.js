@@ -65,8 +65,24 @@ function updateScrollBar() {
 window.addEventListener("resize", updateScrollBar);
 window.addEventListener("scroll", updateScrollBar);
 
+//Scroll Loop
+gsap.registerPlugin(ScrollTrigger);
 
-// Parallax
+ScrollTrigger.create({
+  start: 0,
+  end: "max",
+  onLeave: self => {
+    self.scroll(1);
+    ScrollTrigger.update();
+  },
+  onLeaveBack: self => {
+    self.scroll(ScrollTrigger.maxScroll(window)-1);
+    ScrollTrigger.update();
+  }
+});
+
+// Parallax !!!!!! disabled due to issues with scroll and animation !!!!!!
+/*
 const observerElements = document.querySelectorAll('.trigger-element');
 
 const observerOptions = {
@@ -111,7 +127,7 @@ $(window).on('load', function() {
 
     $(this).impulse();
 });
-
+*/
 //tabs
 
 (function($, document) {
